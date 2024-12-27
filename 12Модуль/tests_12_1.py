@@ -9,6 +9,8 @@ class RunnerTest(TestCase):
         for i in range(10):
             runner.walk()
         self.assertEqual(runner.distance, 50)
+        self.is_frozen = False
+
     def test_run(self):
         runner = Runner('Оля')
         for i in range(10):
