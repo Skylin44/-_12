@@ -3,8 +3,8 @@ from HumanMoveTest.runner_and_tournament import Runner, Tournament
 
 
 class TournamentTest(unittest.TestCase):
+    @unittest.skip("Тесты в этом кейсе заморожены")
 
-    @classmethod
     def setUpClass(cls):
         cls.all_results = {}
 
@@ -12,6 +12,7 @@ class TournamentTest(unittest.TestCase):
         self.Usein = Runner("Усэйн", 10)
         self.Andrey = Runner("Андрей", 9)
         self.Nik = Runner("Ник", 3)
+        self.is_frozen = True
 
     @classmethod
     def tearDownClass(cls):
